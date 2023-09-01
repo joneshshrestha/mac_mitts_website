@@ -512,18 +512,7 @@ Navbar
   justify-content: space-between;
   align-items: center;
 }
-.nav-toggle {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 1.5rem;
-  color: var(--clr-primary-5);
-  cursor: pointer;
-  transition: var(--transition);
-}
-.nav-toggle:hover {
-  transform: scale(1.2);
-}
+
 .nav-link {
   display: block;
   padding: 1rem 2rem;
@@ -545,13 +534,26 @@ Navbar
   overflow: hidden;
   transition: var(--transition);
 }
+
+.nav-ham-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  background-color: #000;
+  top: 95px;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+}
+
 .show-links {
   height: 280px;
 }
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
   /* hide nav toggle button */
-  .nav-toggle {
+  .toggle {
     display: none;
   }
   /* show links */
@@ -593,4 +595,79 @@ Navbar
   .nav-icon:hover {
     color: rgb(192, 1, 1);
   }
+}
+
+/*==========================
+Sidebar navigation
+========================*/
+.navbar-ham {
+  position: relative;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+}
+.navbar-ham .toggle {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.toggle:hover {
+  transform: scale(1.2);
+}
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  width: 100%;
+  font-size: 18px;
+  box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%),
+    0 4px 6px -2px rgb(71 63 79 / 16%);
+  transform: translateY(-1000px);
+  /* transition: width ease 0.2s; */
+}
+.menu-nav.show-menu {
+  display: block;
+  text-align: center;
+  transform: translateY(144px);
+}
+
+.menu-nav li a,
+.menu-nav li span {
+  padding: 1rem;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+}
+.log-in {
+  color: #777;
+  border-top: 1px solid #efecec;
+  margin-top: 15px;
+  font-size: 15px;
+}
+/* logout */
+.logout {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  color: #005bb3;
 }
