@@ -12,7 +12,6 @@ function about() {
             src={aboutImg}
             autoPlay
             loop
-            muted
             className='about-video'
             alt='mac mitts working out'
           />
