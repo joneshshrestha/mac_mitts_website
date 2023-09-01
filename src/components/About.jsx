@@ -10,16 +10,18 @@ function about() {
         <div className='about-video'>
           <video
             src={aboutImg}
-            autoplay={true}
-            loop={true}
+            autoPlay
+            loop
             className='about-video'
             alt='mac mitts working out'
+            preload='auto'
+            controls
           />
         </div>
         <article className='about-info'>
           <h3>explore the difference</h3>
           <p>
-            I'm a certified boxing coach with over 7 years of experience. I'm
+            I'm a certified boxing coach with over 2 years of experience. I'm
             passionate about helping people reach their fitness and boxing
             goals. I offer personalized training courses that are tailored to
             each individual's needs and goals. Whether you're a beginner or a
