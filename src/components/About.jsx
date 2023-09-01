@@ -10,8 +10,8 @@ function about() {
         <div className='about-video'>
           <video
             src={aboutImg}
-            autoPlay
-            loop
+            autoplay={true}
+            loop={true}
             className='about-video'
             alt='mac mitts working out'
           />
