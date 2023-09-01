@@ -4,7 +4,7 @@ function hero() {
   return (
     <section className='hero' id='home'>
       <div className='hero-banner'>
-        <video src={videoBg} autoPlay loop preload='auto' controls />
+        <video src={videoBg} autoPlay loop />
         <div className='content-title'>
           <h1 data-text='MAC MITTS '>MASTERCLASS</h1>
           <p>Become the strongest in the room.</p>

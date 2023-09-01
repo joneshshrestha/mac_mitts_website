@@ -14,8 +14,6 @@ function about() {
             loop
             className='about-video'
             alt='mac mitts working out'
-            preload='auto'
-            controls
           />
         </div>
         <article className='about-info'>
