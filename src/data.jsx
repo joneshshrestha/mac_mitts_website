@@ -52,7 +52,7 @@ export const courses = [
     image: course2,
     date: '8 WEEK PROGRAM',
     title: 'Intermediate Training',
-    info: 'Elevate your boxing prowess this course. Hone technique, amplify power, and refine defense through advanced drills and sparring, guided by seasoned coaches. Take your skills to the next level.',
+    info: 'Elevate your boxing prowess this course. Hone technique, amplify power, and refine defense through advanced drills and sparring, guided by Mac Mitts. Take your skills to the next level.',
     buy: 'Enroll now!',
     // duration: '11 days',
     cost: 'from $500',
